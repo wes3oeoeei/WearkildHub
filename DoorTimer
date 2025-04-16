@@ -1,0 +1,25 @@
+function MMM()
+	local Label
+	for index, obj in game.Players.LocalPlayer.PlayerGui:WaitForChild("Anim", math.huge):GetChildren() do
+		if obj:IsA("TextLabel") then
+			if string.find(obj.Text, "Онлайн") then
+				obj.LocalScript.Disabled = true
+				Label = obj
+			end
+		end
+	end
+
+    local TL = workspace:WaitForChild("MainTimerForNew", math.huge):WaitForChild("Part", math.huge):WaitForChild("SurfaceGui", math.huge):WaitForChild("TextLabel", math.huge)
+
+	TL.Changed:Connect(function()
+		Label.Text = TL.Text
+	end)
+end
+
+if not _G.FL then 
+	print("LOADER LOADED")
+	_G.FL = true
+	MMM()
+	game.Players.LocalPlayer.CharacterAdded:Connect(MMM)
+	game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function(x) if x:IsA("LocalScript") then x:Destroy() end end)
+end
