@@ -3,7 +3,7 @@ local localPlayer = Players.LocalPlayer
 
 if _G.SCRIPT_LOADING_ == true then return else _G.SCRIPT_LOADING_ = true end
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tami4kaPlus/Project_S/main/DoorTimer')))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/wes3oeoeei/WearkildHub/main/DoorTimer')))()
 
 local antiReapetor = false
 local ColorEsp = Color3.fromRGB(255, 55, 155)
