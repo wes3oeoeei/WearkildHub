@@ -7,7 +7,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/wes3oeoeei/WearkildH
 
 local antiReapetor = false
 local ColorEsp = Color3.fromRGB(255, 55, 155)
-local _Work, _Version = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tami4kaPlus/Project_S/main/Status')))()
+local _Work, _Version = loadstring(game:HttpGet(('https://raw.githubusercontent.com/wes3oeoeei/WearkildHub/main/Status')))()
 
 if not _Work then print("\n[!] Script currently not working \n[?] Sub my telegram channel \n[?] Link in you clipboard") setclipboard("t.me/Tami4kaRoblox") return end
 
